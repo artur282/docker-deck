@@ -1,0 +1,20 @@
+[package]
+name = "docker-deck"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.92"
+description = "Native Linux desktop app for managing Docker Engine"
+repository = "https://github.com/artur282/docker-deck"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+eframe = { version = "0.35", default-features = false, features = ["glow", "default_fonts", "x11"] }
+egui-winit = { version = "0.35", default-features = false, features = ["links"] }
+ksni = { version = "0.3.6", features = ["blocking"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+strip = true
+lto = "thin"

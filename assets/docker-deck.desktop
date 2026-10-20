@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Docker Deck
+GenericName=Docker Manager
+Comment=Manage Docker Compose projects, volumes, containers, images and networks
+Exec=docker-deck
+Icon=docker-deck
+Terminal=false
+Categories=Development;
+Keywords=Docker;Compose;Volumes;Containers;Images;Networks;
+StartupNotify=true
+StartupWMClass=docker-deck
