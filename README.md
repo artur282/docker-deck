@@ -74,7 +74,19 @@ cd docker-deck
 - `~/.local/share/applications/docker-deck.desktop`
 - `~/.local/share/icons/hicolor/scalable/apps/docker-deck.svg`
 
-The desktop entry appears as **Docker Deck**.
+The desktop entry appears as **Docker Deck**. The installer is user-local and
+does not invoke `sudo`. Set `PREFIX` to install somewhere else:
+
+```bash
+PREFIX="$HOME/.local" ./install.sh
+```
+
+Use `--no-build` to install an existing `target/release/docker-deck`, and
+`--uninstall` to remove the installed files:
+
+```bash
+./install.sh --uninstall
+```
 
 To run it without installing:
 
