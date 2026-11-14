@@ -9,7 +9,7 @@ readme = "README.md"
 license = "MIT"
 
 [dependencies]
-eframe = { version = "0.35", default-features = false, features = ["glow", "default_fonts", "x11"] }
+eframe = { version = "0.37", default-features = false, features = ["glow", "default_fonts", "x11"] }
 egui-winit = { version = "0.35", default-features = false, features = ["links"] }
 ksni = { version = "0.3.6", features = ["blocking"] }
 serde = { version = "1", features = ["derive"] }
