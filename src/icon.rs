@@ -42,7 +42,7 @@ fn pixel(x: u32, y: u32, size: u32) -> [u8; 4] {
     let nx = (x as f32 + 0.5) / size as f32;
     let ny = (y as f32 + 0.5) / size as f32;
 
-    let inside_background = nx >= 0.04 && nx <= 0.96 && ny >= 0.04 && ny <= 0.96;
+    let inside_background = (0.04..=0.96).contains(&nx) && (0.04..=0.96).contains(&ny);
     if !inside_background {
         return [0, 0, 0, 0];
     }
